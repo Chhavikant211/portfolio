@@ -1,0 +1,132 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    background-size: cover;
+    color: #333;
+    transition: 0.3s;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .dark-mode-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Home Section with profile */
+  .home {
+    text-align: center;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #6c63ff;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  
+  .home h2 {
+    margin-top: 10px;
+    color: #6a6a6a;
+  }
+  
+  /* Sections */
+  section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #6c63ff;
+  }
+  
+  section p, section ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Button */
+  .btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6c63ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background: #121212;
+    color: #eee;
+    background: url('assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .dark-mode .navbar {
+    background: rgba(0,0,0,0.9);
+  }
+  
+  .dark-mode .btn {
+    background: #bb86fc;
+  }
+  
